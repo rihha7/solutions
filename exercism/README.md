@@ -4,6 +4,7 @@ A directory to store my refactored Exercism solutions!
 
 ## Languages
 
+```text
 🔵 pwsh       | 2
 ⚫ bash       | 0
 🔵 c          | 0
@@ -12,6 +13,7 @@ A directory to store my refactored Exercism solutions!
 🔴 ruby       | 0
 🟠 kotlin     | 0
 🟡 javascript | 0
+```
 
 
 ## Requirements
