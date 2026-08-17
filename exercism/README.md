@@ -9,10 +9,10 @@ A directory to store my refactored Exercism solutions...
 | language      | count |
 |:--------------|:-----:|
 | 🔵 pwsh       |   2   |
-| ⚫ bash       |   0   |
+| ⚫ bash       |   2   |
 | 🔵 c          |   0   |
 | 🟣 elixir     |   0   |
-| 🟢 python     |   0   |
+| 🟢 python     |   2   |
 | 🔴 ruby       |   0   |
 | 🟠 kotlin     |   0   |
 | 🟡 javascript |   0   |
