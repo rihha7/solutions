@@ -20,6 +20,9 @@ Function Invoke-Sublist() {
     
     .OUTPUTS
     [Sublist] Inherits from [System.Enum]
+
+    .LINK
+    https://exercism.org/tracks/powershell/exercises/sublist
     #>
     [CmdletBinding()]
     Param (

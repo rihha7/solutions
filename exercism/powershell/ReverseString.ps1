@@ -12,6 +12,9 @@ Function Get-ReverseString() {
     
     .OUTPUTS
     [string]
+
+    .LINK
+    https://exercism.org/tracks/powershell/exercises/reverse-string
     #>
     [CmdletBinding()]
     Param(

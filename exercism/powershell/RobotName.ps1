@@ -15,14 +15,14 @@ $secondName = $robot1.Name
 
 $thirdName = [Robot]::new().Name
 
-$initialName -ne $secondName -and `
-$secondName -ne $thirdName -and `
-$initialName -ne $thirdName
-
+$initialName -ne $secondName -and $secondName -ne $thirdName -and $initialName -ne $thirdName
 Returns: $True
 
 .OUTPUTS
 [void]
+
+.LINK
+https://exercism.org/tracks/powershell/exercises/robot-name
 #>
 
 Class Robot {

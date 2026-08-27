@@ -18,6 +18,9 @@ Function Get-Raindrops() {
     
     .OUTPUTS
     [string]
+
+    .LINK
+    https://exercism.org/tracks/powershell/exercises/raindrops
     #>
     [CmdletBinding()]
     Param(
