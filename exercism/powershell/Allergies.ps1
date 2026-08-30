@@ -14,7 +14,7 @@ Enum Allergens {
 Determines which allergens a person is allergic to based on their allergy score.
 
 .DESCRIPTION
-Each allergen and their numeric score is defined by the [Allergens] enum.
+Each allergen and its numeric score is defined by the [Allergens] enum.
 Ignores allergens with a score > 128.
 
 IsAllergicTo() checks whether a person is allergic to a given item.
