@@ -8,10 +8,10 @@
 
 
 # METHOD 1:
-declare -ra MULTIPLES_OF_3_OR_5=( {3..999..3} {5..995..5} ) # avoids for looping to 1000 for efficiency
+declare -ra MULTIPLES_OF_3_AND_5=( {3..999..3} {5..995..5} ) # avoids for looping to 1000 for efficiency
 
-printf '%s\n' "${MULTIPLES_OF_3_OR_5[@]}" | sort -nu | awk '{ sum += $1 } END { print sum }'
-# or: sort -nu <(printf '%s\n' "${MULTIPLES_OF_3_OR_5[@]}") | awk '{ sum += $1 } END { print sum }'
+printf '%d\n' "${MULTIPLES_OF_3_AND_5[@]}" | sort -nu | awk '{ sum += $1 } END { print sum }'
+# or: sort -nu <(printf '%d\n' "${MULTIPLES_OF_3_AND_5[@]}") | awk '{ sum += $1 } END { print sum }'
 
 # --------------------------------
 
