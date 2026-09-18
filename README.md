@@ -37,7 +37,7 @@ Contains my solutions for Exercism, Codewars, Project Euler, and other programmi
 [Problem 2 —  Even Fibonacci Numbers](https://projecteuler.net/problem=2)</br>
 
 #### Codewars
-1. [Nth Fibonacci](https://www.codewars.com/kata/522551eee9abb932420004a0/train/c)</br>
+[C — Nth Fibonacci](https://www.codewars.com/kata/522551eee9abb932420004a0/train/c)</br>
 
 #### Exercism
 [Python — Atbash Cipher](https://exercism.org/tracks/python/exercises/atbash-cipher)</br>
