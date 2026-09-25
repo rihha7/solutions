@@ -10,11 +10,14 @@ Contains my solutions for Exercism, Codewars, Project Euler, and other programmi
 | Platform      | Solved | Repository                   |
 |:--------------|:------:|:----------------------------:|
 | Exercism      |   15   | [solutions](./exercism)      |
-| Codewars      |    1   | [solutions](./codewars)      |
+| Codewars      |    2   | [solutions](./codewars)      |
 | Project Euler |    2   | [solutions](./project-euler) |
+| Extra         |    4   | [solutions](./extra) |
 </div>
 
 ## Languages
+> Solutions from `./extra` have been omitted from the table below...
+
 <div style="margin-left: 30px; margin-top: 20px">
 
 | language      | solutions |
