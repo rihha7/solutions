@@ -40,7 +40,7 @@ ull nth_fib_recurse(int n) {
 // TEST:
 #include <stdio.h>
 
-int main() {
+int main(void) {
     printf("\nTests For \"N-th Fibonacci\" [6 kyu]:\n----------------------------------\n");
 
     printf("nth_fib_no_recurse solution(1): %llu\n", nth_fib_no_recurse(1));
