@@ -9,8 +9,8 @@ Contains my solutions for Exercism, Codewars, Project Euler, and other programmi
 
 | Platform      | Solved | Repository                   |
 |:--------------|:------:|:----------------------------:|
-| Exercism      |   17   | [solutions](./exercism)      |
-| Codewars      |    2   | [solutions](./codewars)      |
+| Exercism      |   19   | [solutions](./exercism)      |
+| Codewars      |    3   | [solutions](./codewars)      |
 | Project Euler |    2   | [solutions](./project-euler) |
 | Extra         |    4   | [solutions](./extra) |
 </div>
@@ -24,8 +24,8 @@ Contains my solutions for Exercism, Codewars, Project Euler, and other programmi
 |:--------------|:---------:|
 | 🔵 pwsh       |    11    |
 | ⚫ bash       |     3    |
-| 🔵 c          |     1    |
-| 🟣 elixir     |     1    |
+| 🔵 c          |     2    |
+| 🟣 elixir     |     3    |
 | 🟢 python     |     3    |
 | 🔴 ruby       |     0    |
 | 🟠 kotlin     |     0    |

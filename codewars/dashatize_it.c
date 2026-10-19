@@ -4,10 +4,13 @@
 
 // Link: https://www.codewars.com/kata/58223370aef9fc03fd000071/train/c
 
-#include <string.h>
+// SOLUTION 1: Tracks if previous digit is even, before inserting '-' before an odd digit. 
+// SOLUTION 2: Inserts '-' on either side of an odd digit, and avoids duplicate dashes.
+// SOLUTION 3: (BEST) Converts given number to a string and iterates over a copy.
 
-#define TO_UNSIGNED_INT(n) ((n) < 0 ? 0u - (unsigned int)(n) \
-                                    : (unsigned int)(n))
+#include <string.h> // strlen()
+
+#define TO_UNSIGNED_INT(n) ((n) < 0 ? 0u - (unsigned int)(n) : (unsigned int)(n))
 
 #define REVERSE(input, output, len) do { \
     for (size_t j = 0; j < len; j++) (output)[j] = (input)[(len) - 1 - j]; \
@@ -15,7 +18,9 @@
 } while (0)
 
 
-// SOLUTION 1: Tracks if previous digit is even, before inserting '-' before an odd digit.
+
+// SOLUTION 1...
+
 void dashatize1(int number, char string[32]) {
     char reversed[10 + 9 + 1];
     unsigned int n = TO_UNSIGNED_INT(number);
@@ -41,7 +46,8 @@ void dashatize1(int number, char string[32]) {
 
 
 
-// SOLUTION 2: Inserts a dash on either side of an odd digit, and avoids duplicate dashes.
+// SOLUTION 2...
+
 void dashatize2(int number, char string[32]) {
     char reversed[10 + 9 + 1];
     unsigned int n = TO_UNSIGNED_INT(number);
@@ -66,15 +72,45 @@ void dashatize2(int number, char string[32]) {
 
 
 
-#include <stdio.h>
+// SOLUTION 3...
+
+#include <stdlib.h> // llabs()
+#include <stdio.h> // snprintf(), printf()
+
+#define TO_UNSIGNED_INT(n) ((n) < 0 ? 0u - (unsigned int)(n) : (unsigned int)(n))
+
+void dashatize3(int number, char string[32]) {
+  char str[10+9+1];
+
+  // snprintf(str, 21, "%llu", llabs(number));
+  snprintf(str, 20, "%u", TO_UNSIGNED_INT(number)); // alternative to llabs()
+  
+  for (char *cpy = str; *cpy; cpy++) {
+    if (*cpy & 1 && cpy != str && string[-1] != '-') *string++ = '-';
+    *string++ = *cpy;
+    if (*cpy & 1 && cpy[1]) *string++ = '-';
+  }
+  
+  *string = '\0';
+}
+
+
+
+
 
 int main(void) {
     char actual[32];
-    memset(actual, 32, sizeof(actual));
-    dashatize1(-1111111111, actual);
+    memset(actual, '@', sizeof(actual));
 
+    dashatize1(-1111111111, actual);
     printf("\ndashatize1(-1111111111, actual) = %s, expected: \"1-1-1-1-1-1-1-1-1-1\"\n", actual);
-    printf("dashatize2(-1111111111, actual) = %s, expected: \"1-1-1-1-1-1-1-1-1-1\"\n\n", actual);
+
+    dashatize2(-1111111111, actual);
+    printf("dashatize2(-1111111111, actual) = %s, expected: \"1-1-1-1-1-1-1-1-1-1\"\n", actual);
+
+    dashatize3(-1111111111, actual);
+    printf("dashatize3(-1111111111, actual) = %s, expected: \"1-1-1-1-1-1-1-1-1-1\"\n\n", actual);
 
     return 0;
 }
+
