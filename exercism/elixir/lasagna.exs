@@ -1,4 +1,9 @@
 defmodule Lasagna do
+  @moduledoc """
+  Provides functions related to the time taken to prepare a lasagna.
+
+  Link: https://exercism.org/tracks/elixir/exercises/lasagna
+  """
   @minutes_per_layer 2
 
   @spec expected_minutes_in_oven :: pos_integer()
