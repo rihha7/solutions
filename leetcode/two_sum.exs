@@ -1,12 +1,14 @@
 defmodule Solution do
   @module_doc """
+  [1] Two Sum
+
   You are given an array of integers `nums` and an integer `target`.
   Return the indices of two numbers in `nums`, such that they add up to target.
   You may assume that each input would have exactly one solution, and you may not use the same element twice.
   You can return the answer in any order.
     -109 <= target <= 109
 
-  Can you come up with an algorithm that is less than O(n2) time complexity?
+  Can you come up with an algorithm that is less than O(n^2) time complexity?
 
   Link: https://leetcode.com/problems/two-sum/
   """
