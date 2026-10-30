@@ -18,8 +18,10 @@ defmodule LanguageList do
   def first([head | _tail]), do: head
   def first2(list), do: hd(list)
 
-  @spec count([String.t()]) :: integer()
-  def count([_head | tail], c \\ 0), do: count(tail, c + 1)
+  @spec count(list :: [String.t()]) :: integer()
+  @spec count(list :: [String.t()], c :: integer()) :: integer()
+  def count(_list, c \\ 0)
+  def count([_head | tail], c), do: count(tail, c + 1)
   def count([], c), do: c
   
   def count2(list), do: length(list)
