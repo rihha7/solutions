@@ -14,5 +14,6 @@ defmodule GuessingGame do
   def compare(secret_number, guess) when guess < secret_number, do: "Too low"
   
   def compare(_secret_number, _guess), do: "Correct"
+  def compare(n, n), do: "Correct" # alternative
 end
 
