@@ -1,6 +1,6 @@
 defmodule Negator do
   @moduledoc """
-  [8 kyu] Return Negative
+  [8kyu] Return Negative
 
   You are given a number. Make it negative.
 
