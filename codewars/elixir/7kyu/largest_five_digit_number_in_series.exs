@@ -24,11 +24,10 @@ defmodule LargestInSeries do
 
 
   def solution2(number) do
-    chars = String.to_charlist(number) |> Enum.map(&(&1 - ?0))
-
-    chars
+    number
+    |> String.to_charlist()
     |> Enum.chunk_every(5, 1, :discard)
-    |> Enum.map(&Enum.reduce(&1, 0, fn digit, acc -> acc * 10 + digit end))
+    |> Enum.map(&Enum.reduce(&1, 0, fn digit, acc -> acc * 10 + (digit - ?0) end))
     |> Enum.max(fn -> 0 end)
   end
 end
