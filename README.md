@@ -12,7 +12,7 @@ Contains my solutions for Exercism, Codewars, Project Euler, and other programmi
 | Exercism      |   29   | [solutions](./exercism)      |
 | Codewars      |    9   | [solutions](./codewars)      |
 | Project Euler |    2   | [solutions](./project-euler) |
-| LeetCode      |   10   | [solutions](./leetcode)      |
+| LeetCode      |   11   | [solutions](./leetcode)      |
 | Extra         |    4   | [solutions](./extra)         |
 </div>
 
@@ -26,7 +26,7 @@ Contains my solutions for Exercism, Codewars, Project Euler, and other programmi
 | 🔵 pwsh       |    11    |
 | ⚫ bash       |     4    |
 | 🔵 c          |     3    |
-| 🟣 elixir     |    28    |
+| 🟣 elixir     |    29    |
 | 🟢 python     |     3    |
 | 🔴 ruby       |     0    |
 | 🟠 kotlin     |     0    |
