@@ -14,17 +14,15 @@ defmodule Solution do
   """
   @spec search(nums :: [integer], target :: integer) :: integer
   def search(nums, target) do
-    t_nums = List.to_tuple(nums) # space complexity: O(n)
-    binary_search(t_nums, target, 0, tuple_size(t_nums) - 1) # time complexity: O(1) (tuple_size/1) 
+    t_nums = List.to_tuple(nums)
+    binary_search(t_nums, target, 0, tuple_size(t_nums) - 1)
   end
 
   defp binary_search(_, _, left, right) when left > right, do: -1
 
-  # recursion time complexity: O(1) (TCO)
-
   defp binary_search(t_nums, target, left, right) do
     mid_idx = div(left + right, 2)
-    mid_val = elem(t_nums, mid_idx) # time complexity: O(1) (elem/2)
+    mid_val = elem(t_nums, mid_idx)
 
     cond do
       mid_val == target -> mid_idx

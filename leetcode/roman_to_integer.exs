@@ -40,14 +40,4 @@ defmodule Solution do
                    n + Map.get(@roman_to_dec, <<r1::utf8>>))
     end
   end
-
-  # time complexity: O(n) calls * O(1) extra work == O(n)
-  #   => O(n) (iterating for each 1-2 chars in input string of length n)
-  #      => O(log 13) -> O(1) (is_map_key/2)
-  #      => O(log 13) -> O(1) (Map.get/3)
-
-  # space complexity: O(1) + O(1) + O(1) = O(1)
-  #   => O(1) (a map created of a fixed number of 13 entries regardless of input size)
-  #   => O(1) (TCO reuses the stack frame)
-  #   => O(1) (binary decomposition)
 end
