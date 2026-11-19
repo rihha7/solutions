@@ -31,7 +31,7 @@ defmodule Solution do
   Link: https://leetcode.com/problems/longest-palindromic-substring/description/
   """
   @spec longest_palindrome(s :: String.t) :: String.t
-    def longest_palindrome(<<_::utf8>> = s), do: s
+  def longest_palindrome(<<_::utf8>> = s), do: s
   def longest_palindrome(<<c::utf8, c::utf8>> = s), do: s
 
   def longest_palindrome(<<c::utf8, _::binary>> = s) do
