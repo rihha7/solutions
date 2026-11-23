@@ -6,14 +6,14 @@ defmodule Solution do
   Append the additional letters onto the end of the merged string.
 
   Examples:
-    mergeAlternately("abc", "pqr")
+    merge_alternately("abc", "pqr")
     => "apbqcr"
 
   Link: https://leetcode.com/problems/merge-strings-alternately
   """
 
-  @spec mergeAlternately(word1 :: String.t(), word2 :: String.t()) :: String.t()
-  def mergeAlternately(word1, word2), do: do_merge(word1, word2, "")
+  @spec merge_alternately(word1 :: String.t(), word2 :: String.t()) :: String.t()
+  def merge_alternately(word1, word2), do: do_merge(word1, word2, "")
 
   defp do_merge("", "", acc), do: acc
 
@@ -35,8 +35,8 @@ testcases = [
 ]
 
 for {word1, word2, expected} <- testcases do
-  got = Solution.mergeAlternately(word1, word2)
+  got = Solution.merge_alternately(word1, word2)
   reaction = got == expected and "✅" || "❌"
 
-  IO.puts("Solution.mergeAlternately(\"#{word1}\", \"#{word2}\") => got: \"#{got}\", expected: \"#{expected}\" #{reaction}")
+  IO.puts("Solution.merge_alternately(\"#{word1}\", \"#{word2}\") => got: \"#{got}\", expected: \"#{expected}\" #{reaction}")
 end
